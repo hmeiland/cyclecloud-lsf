@@ -23,6 +23,7 @@ end
 directory node['lsf']['admin']['home'] do
   user node['lsf']['admin']['username']
   group node['lsf']['admin']['username']
+  mode '755'.to_i
   recursive true
 end
 
